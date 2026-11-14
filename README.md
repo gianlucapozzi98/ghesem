@@ -13,8 +13,8 @@ api/menu.js     legge il menu dal foglio Google e lo passa al sito (risponde a /
 fonts/          font ospitati sul sito (Fraunces, DM Sans, Caveat: SIL Open Font License)
 img/foto/       foto in WebP, in più larghezze
 img/logo-ghe-sem.svg   logo (ricalcato dall'insegna), usato nella barra, nell'hero e nel footer
-favicon.svg            icona della scheda (il calice del logo)
-favicon-32.png, apple-touch-icon.png   la stessa icona in PNG, per Safari e iPhone
+favicon.svg            icona della scheda (il logo intero su fondo vino)
+favicon.ico, favicon-32.png, favicon-192.png, apple-touch-icon.png   la stessa icona in ICO e PNG (Google, Safari, iPhone)
 ```
 
 ## Nessun dato a terzi
@@ -47,5 +47,4 @@ Il sito si pubblica da solo a ogni push su `main`. La cartella `api/` viene tras
 
 ## Prima di andare online
 
-- Ragione sociale e P.IVA nel footer (obbligatoria per legge sul sito di un'attività) e in `privacy.html`, dove c'è il commento "DA COMPLETARE".
 - Sostituire le foto segnaposto e togliere la dicitura nel footer.
