@@ -380,7 +380,6 @@
   const tiles = $$('.tile');
   const lb = $('.lightbox');
   const lbImg = $('img', lb);
-  const lbCap = $('figcaption', lb);
   let lbIndex = 0;
   let lastFocus = null;
 
@@ -389,7 +388,6 @@
     const img = $('img', tiles[lbIndex]);
     lbImg.src = tiles[lbIndex].dataset.full;
     lbImg.alt = img.alt;
-    lbCap.textContent = img.alt;
     if (lb.hidden) { lastFocus = document.activeElement; lb.hidden = false; document.body.classList.add('no-scroll'); $('.lb-close', lb).focus(); }
   }
   function closeLb() {
