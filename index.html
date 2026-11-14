@@ -3,15 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ghe sem · Café &amp; bistrot a Concorezzo · Pranzo di lavoro</title>
-<meta name="description" content="Ghe sem, café e bistrot in Via Remo Brambilla 23 a Concorezzo. Caffè al banco dalle 7:00, pranzo di lavoro a 13 € dal lunedì al sabato, eventi aziendali e feste private.">
+<title>Ghe sem Concorezzo · Bar e bistrot, pranzo di lavoro a 13 €</title>
+<meta name="description" content="Bar e bistrot a Concorezzo, in Via Remo Brambilla 23: caffè al banco dalle 7:00 e pranzo di lavoro a 13 € dal lunedì al sabato. Eventi aziendali e feste private.">
+<link rel="canonical" href="https://www.ghesemconcorezzo.it/">
 <meta name="theme-color" content="#6E1F2B">
 
 <meta property="og:type" content="restaurant">
 <meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Ghe sem Concorezzo">
+<meta property="og:url" content="https://www.ghesemconcorezzo.it/">
 <meta property="og:title" content="Ghe sem · Ci siamo, a pranzo.">
-<meta property="og:description" content="Café e bistrot a Concorezzo. Caffè al banco dalle 7:00, pranzo di lavoro a 13 €. Eventi aziendali e feste private.">
+<meta property="og:description" content="Bar e bistrot a Concorezzo. Caffè al banco dalle 7:00, pranzo di lavoro a 13 €. Eventi aziendali e feste private.">
 <meta property="og:image" content="https://www.ghesemconcorezzo.it/img/foto/hero-pranzo-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -25,24 +30,42 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "Ghe sem",
-  "description": "Café e bistrot a Concorezzo con pranzo di lavoro dal lunedì al sabato.",
-  "servesCuisine": "Italiana",
-  "priceRange": "€",
-  "telephone": "+39 039 677 3260",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Via Remo Brambilla 23",
-    "postalCode": "20863",
-    "addressLocality": "Concorezzo",
-    "addressRegion": "MB",
-    "addressCountry": "IT"
-  },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "07:00", "closes": "17:30" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "07:00", "closes": "17:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "15:00" }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ghesemconcorezzo.it/#website",
+      "url": "https://www.ghesemconcorezzo.it/",
+      "name": "Ghe sem Concorezzo",
+      "inLanguage": "it-IT"
+    },
+    {
+      "@type": ["Restaurant", "CafeOrCoffeeShop"],
+      "@id": "https://www.ghesemconcorezzo.it/#locale",
+      "name": "Ghe sem",
+      "alternateName": "Ghe sem Concorezzo",
+      "description": "Bar e bistrot a Concorezzo: caffè al banco dalle 7:00, pranzo di lavoro a 13 € con primo, secondo e contorno dal lunedì al sabato, vini al calice, eventi aziendali e feste private.",
+      "url": "https://www.ghesemconcorezzo.it/",
+      "logo": "https://www.ghesemconcorezzo.it/img/logo-ghe-sem.svg",
+      "hasMenu": "https://www.ghesemconcorezzo.it/#menu",
+      "servesCuisine": "Italiana",
+      "priceRange": "€",
+      "telephone": "+39 039 677 3260",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Remo Brambilla 23",
+        "postalCode": "20863",
+        "addressLocality": "Concorezzo",
+        "addressRegion": "MB",
+        "addressCountry": "IT"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 45.5938228, "longitude": 9.3274004 },
+      "areaServed": ["Concorezzo", "Agrate Brianza", "Vimercate", "Arcore", "Villasanta", "Monza"],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "07:00", "closes": "17:30" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "07:00", "closes": "17:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "15:00" }
+      ]
+    }
   ]
 }
 </script>
@@ -97,7 +120,7 @@
     <p class="kicker kicker-light" data-reveal><span class="k-text">Café &amp; bistrot<span class="k-city"><span class="k-sep"> · </span>Concorezzo (MB)</span></span></p>
 
     <div class="hero-title">
-      <h1 class="hero-logo"><span class="sr-only">Ghe sem, café &amp; bistrot</span><span class="hero-mark" aria-hidden="true"></span></h1>
+      <h1 class="hero-logo"><span class="sr-only">Ghe sem, café &amp; bistrot a Concorezzo</span><span class="hero-mark" aria-hidden="true"></span></h1>
     </div>
 
     <p class="hero-lede" data-reveal style="--d:500ms">Il caffè al banco la mattina. Un pranzo vero a mezzogiorno.<br class="br-d"> A due passi da dove lavori.</p>
@@ -277,7 +300,7 @@
     <header class="sec-head">
       <p class="kicker" data-reveal>Pranzo di lavoro · 13 €</p>
       <h2 data-reveal style="--d:80ms">Componi<br><em>il tuo pranzo.</em></h2>
-      <p class="sec-sub" data-reveal style="--d:160ms">Un primo, un secondo, un contorno. Il menu cambia ogni giorno<span data-menu-when>: questo è quello di <b data-menu-date>martedì 3 novembre</b></span>. Tocca i piatti per scegliere.</p>
+      <p class="sec-sub" data-reveal style="--d:160ms">Un primo, un secondo, un contorno. Il menu cambia ogni giorno<span data-menu-when hidden>: questo è quello di <b data-menu-date></b></span>. Tocca i piatti per scegliere.</p>
     </header>
 
     <div class="menu-grid">
@@ -339,7 +362,7 @@
         <div class="ticket" data-ticket>
           <div class="ticket-inner">
             <p class="t-brand">Ghe sem <span>· Concorezzo</span></p>
-            <p class="t-sub">Pranzo di lavoro<span data-menu-when> · <span data-menu-date>martedì 3 novembre</span></span></p>
+            <p class="t-sub">Pranzo di lavoro<span data-menu-when hidden> · <span data-menu-date></span></span></p>
             <hr class="t-perf">
             <ul class="t-lines" aria-live="polite">
               <li data-slot="primi"><span>Primo</span><b class="empty">da scegliere</b></li>
@@ -416,7 +439,7 @@
         <p class="kicker" data-reveal>Il locale · Via Remo Brambilla</p>
         <h2 data-reveal style="--d:80ms">Entra,<br><em>ci siamo.</em></h2>
       </div>
-      <p class="sec-sub" data-reveal style="--d:160ms">Al mattino si comincia dal banco: espresso, cappuccino, una brioche. A mezzogiorno la sala cambia ritmo: tavoli apparecchiati, una lista corta, un servizio pensato per chi ha il tempo contato ma non vuole rinunciare a mangiare bene.</p>
+      <p class="sec-sub" data-reveal style="--d:160ms">Al mattino si comincia dal banco del bar: espresso, cappuccino, una brioche. A mezzogiorno la sala diventa un piccolo ristorante: tavoli apparecchiati, una lista corta, un servizio pensato per chi ha il tempo contato ma non vuole rinunciare a mangiare bene.</p>
     </header>
 
     <div class="bento">
@@ -436,7 +459,7 @@
     <div class="work-copy">
       <p class="kicker kicker-ink" data-reveal>Pranzo di lavoro</p>
       <h2 data-reveal style="--d:80ms">Lavori qui intorno?<br><em>Allora ci siamo.</em></h2>
-      <p class="lede" data-reveal style="--d:160ms">Da Agrate Brianza, Vimercate, Arcore, Villasanta e Monza: chi lavora in zona sa dove andare a pranzo. Tredici euro, un primo, un secondo e un contorno, e un caffè al banco per chiudere.</p>
+      <p class="lede" data-reveal style="--d:160ms">Da Agrate Brianza, Vimercate, Arcore, Villasanta e Monza: chi lavora in zona sa dove andare a pranzo a Concorezzo. Tredici euro, un primo, un secondo e un contorno, e un caffè al banco per chiudere.</p>
 
       <div class="work-card" data-reveal style="--d:240ms">
         <img src="img/foto/colleghi-600x600.webp" alt="Colleghi a pranzo allo stesso tavolo" loading="lazy" width="120" height="120">

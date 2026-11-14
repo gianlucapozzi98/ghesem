@@ -5,6 +5,8 @@ Sito statico (HTML, CSS e JavaScript, senza build né dipendenze) più una picco
 ```
 index.html      contenuti e struttura
 privacy.html    informativa privacy e cookie
+robots.txt      regole per i motori di ricerca, con il link alla sitemap
+sitemap.xml     elenco delle pagine per Google (se ne aggiungi una, aggiungila qui)
 css/style.css   stile (font, palette in cima al file)
 js/main.js      comportamento (orari in cima al file)
 api/menu.js     legge il menu dal foglio Google e lo passa al sito (risponde a /api/menu)
@@ -33,7 +35,7 @@ Il sito si pubblica da solo a ogni push su `main`. La cartella `api/` viene tras
 
 ## Cose da aggiornare
 
-**Menu del giorno**. Lo aggiorna il locale dal foglio Google (anche dall'app Fogli sul telefono): una riga "Data del menu" e poi una riga per piatto, con Categoria (Primi, Secondi, Contorni, Dolce), Piatto e Descrizione. Il foglio deve restare pubblicato (File → Condividi → Pubblica sul web). Il link CSV del foglio è in `api/menu.js`; il sito rilegge il foglio al massimo una volta al minuto, più il ritardo di Google (circa 5 minuti). Se il foglio non risponde, il sito mostra il menu scritto in `index.html` (sezione `id="menu"`, con la data nei punti `data-menu-date`): conviene aggiornarlo ogni tanto, perché è quello che vede chi ha JavaScript spento.
+**Menu del giorno**. Lo aggiorna il locale dal foglio Google (anche dall'app Fogli sul telefono): una riga "Data del menu" e poi una riga per piatto, con Categoria (Primi, Secondi, Contorni, Dolce), Piatto e Descrizione. Il foglio deve restare pubblicato (File → Condividi → Pubblica sul web). Il link CSV del foglio è in `api/menu.js`; il sito rilegge il foglio al massimo una volta al minuto, più il ritardo di Google (circa 5 minuti). Se il foglio non risponde, il sito mostra il menu scritto in `index.html` (sezione `id="menu"`): conviene aggiornarlo ogni tanto, perché è quello che vede chi ha JavaScript spento, compresi molti assistenti AI che leggono il sito. Non ha data apposta: la data compare solo quando arriva dal foglio.
 
 **Orari**. Vanno cambiati in quattro posti:
 1. la tabella in `id="dove"` (`index.html`)
